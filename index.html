@@ -14,7 +14,7 @@
     .game-card:hover { transform: scale(1.05); transition: transform 0.3s; }
     a { color: #87CEEB; text-decoration: none; display: inline-block; margin-top: 10px; }
     a:hover { color: #ff5555; }
-    .coming-soon { color: #888; font-style: italic; font-size: 0.9em; }
+    .coming-soon { color: rgb(172, 169, 169); font-style: italic; font-size: 0.9em; }
     .more-info { display: none; background: #222; padding: 10px; margin-top: 10px; border-radius: 4px; font-size: 0.9em; overflow: hidden; max-width: 100%; }
     .more-info.active { display: block; }
     .more-info-images { display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 10px; max-width: 100%; }
@@ -48,20 +48,23 @@
   </div>
   <section class="about">
     <h2>About Me</h2>
-    <p>Hi, I'm Luis Montalvo, a Computer Science graduate and indie game developer. I shipped <i>Menticide</i>, a survival horror game, on Steam using C++ and Unreal Engine. Currently, I'm building full-stack web applications while working on new horror and dark fantasy games like <i>Wraithclad</i>. Passionate about crafting immersive experiences!</p>
+    <p>I'm Luis Montalvo, a Computer Science graduate and indie game developer passionate about crafting immersive, 
+        story-driven horror and fantasy worlds. I developed and shipped Menticide, a survival horror game, on Steam using Unreal Engine. 
+        Currently, I’m creating a dark fantasy game blending psychological depth and epic lore, while building full-stack web applications. 
+        Driven by a love for learning, I’m expanding my expertise in C++, Swift for iOS, and web technologies. By blending technical precision with creative storytelling, 
+        I bring unique experiences to life. Dive into my projects and get lost in the darkness!</p>
   </section>
   <section class="games">
     <div class="game-card">
       <img src="Menticide1.png" alt="Menticide">
       <h2>Menticide</h2>
-      <p>Live through mysterious bodycam footage from classified operations hiding terrifying secrets.</p>
+      <p>Live through mysterious bodycam footage from classified operations.</p>
       <a href="https://store.steampowered.com/app/3022540/Menticide/" target="_blank">Play on Steam</a>
       <button class="more-btn" onclick="toggleMore('menticide-more')">More Info</button>
       <div id="menticide-more" class="more-info">
-        <p>Built in Unreal Engine. Launched on Steam in December 2024.</p>
-        <p>Created pick up key system that was able to use different meshes that add to the story.</p>
-        <p>Used level streaming that improved performance so not the whole levels are loaded.</p>
-        <p></p>
+        <p>A first-person psychological thriller launched on Steam in 2024. Built in Unreal Engine, Menticide features dynamic AI systems and bodycam-style visuals for an immersive, gritty experience. I designed and implemented core gameplay mechanics, optimized AI behavior, and managed the Steam deployment process, ensuring a polished player experience.
+
+        </p>
         <div class="more-info-images">
           <img src="SteamSS1.png" alt="Menticide Gameplay" onclick="showFullscreen(this.src)">
           <img src="SteamSS4.png" alt="Menticide Enemy" onclick="showFullscreen(this.src)">
@@ -72,10 +75,10 @@
     <div class="game-card">
       <img src="DarkFantasyCover.png" alt="Untitled Dark Fantasy">
       <h2>Untitled</h2>
-      <p>As a lone knight navigate through a twisted dark fantasy world. <span class="coming-soon">In Development coming Late 2025/Early 2026</span></p>
+      <p>As a lone knight navigate through a twisted dark fantasy world. <span class="coming-soon">Coming Late 2025/Early 2026</span></p>
       <button class="more-btn" onclick="toggleMore('wraithclad-more')">More Info</button>
       <div id="wraithclad-more" class="more-info">
-        <p>Dark fantasy single player in Unreal Engine. Focuses on atmospheric combat and a grim narrative.</p>
+        <p>A dark fantasy game leveraging Unreal Engine’s Nanite tessellation for highly detailed environments. I’m designing a bespoke combat system to deliver visceral, responsive gameplay within a richly atmospheric world. Currently in development, this project showcases my ability to craft intricate systems and immersive settings.</p>
         <div class="more-info-images">
           <img src="HighresScreenshot00012.png" alt="Wraithclad Knight" onclick="showFullscreen(this.src)">
           <img src="HighresScreenshot00017.png" alt="Wraithclad World" onclick="showFullscreen(this.src)">
@@ -89,7 +92,8 @@
       <a href="https://youtu.be/Hp0mm8lnPdc?si=UqASPs1cd03eSVU5" target="_blank">Watch on YouTube</a>
       <button class="more-btn" onclick="toggleMore('ninefive-more')">More Info</button>
       <div id="ninefive-more" class="more-info">
-        <p>This was a final project for game design course.</p>
+        <p>Led a team of five to create a horror game where players collect items while evading a roaming enemy AI. I coordinated tasks, designed core mechanics, and balanced AI difficulty to maintain tension and fairness. This project honed my leadership and game design skills under tight constraints.</p>
+        <p></p>
         <div class="more-info-images">
           <img src="NinetoFive1.png" alt="9-5 Office" onclick="showFullscreen(this.src)">
           <img src="NinetoFive2.png" alt="9-5 Horror" onclick="showFullscreen(this.src)">
@@ -104,11 +108,7 @@
       <a href="https://youtu.be/CwAHytpk4fI?si=P_Fdy7YvgTFkxliq" target="_blank">Watch on YouTube</a>
       <button class="more-btn" onclick="toggleMore('schoolsout-more')">More Info</button>
       <div id="schoolsout-more" class="more-info">
-        <p>This was a final school project for game programming course that I worked with five other classmates. </p>
-        <p>As the group leader I oversaw the project and was heavily involved in every aspect of the game. </p>
-        <p>Began setting up the weapon and interaction systems. </p>
-        <p>Created a simple zombie AI which then just spawned again every few seconds.</p>
-        <p></p>
+        <p>Directed a team of five to develop a horror survival game featuring zombie combat and timed survival objectives. I oversaw programming of enemy AI, combat systems, and survival mechanics, ensuring cohesive gameplay. This project strengthened my technical and leadership skills in a challenging, combat-driven scope. </p>
         <div class="more-info-images">
           <img src="Schoolsout1.png" alt="School's Out Zombies" onclick="showFullscreen(this.src)">
           <img src="Schoolsout2.png" alt="School's Out School" onclick="showFullscreen(this.src)">
